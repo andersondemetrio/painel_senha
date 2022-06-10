@@ -13,11 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from totem.views import index_agenda
 from django.contrib import admin
 from django.urls import path
+from totem.views import index_totem
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index_agenda, name="index"),
+    path('',index_totem, name="index"),
 ]
