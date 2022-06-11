@@ -1,0 +1,33 @@
+{% include "base.html" %}
+{% block conteudo  %}
+<div style="padding: 30px">
+<h1>{{contato.id}}</h1>
+<form action={% url 'update_contato' contato.id %} method="post">
+    {% csrf_token %}
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+    </div>
+    <input type="text" class="form-control" name="nome" value="{{contato.nome}}">
+  </div>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+    </div>
+    <input type="text" class="form-control" name="email" value="{{contato.email}}"><br>
+</div>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Telefone</span>
+    </div>
+    <input type="text" class="form-control" name="telefone" value="{{contato.telefone}}"><br>
+</div>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Data criação</span>
+    </div>
+    <input type="text" class="form-control" name="data_criacao" value="{{contato.data_criacao|date:'d/m/Y'}}"><br>
+</div>
+<button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+{% endblock conteudo %}

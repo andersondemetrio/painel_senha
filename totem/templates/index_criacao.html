@@ -1,0 +1,17 @@
+{% include 'base.html' %}
+{% block conteudo %}
+
+<div class="container">
+    <form action= {% url 'index' %} method="post" >
+        <table class = "table">
+            {{forms}}
+            {% csrf_token %} 
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+{% endblock conteudo  %}

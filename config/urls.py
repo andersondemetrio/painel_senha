@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from totem.views import index_totem
+from totem.views import (delete_contato, index_contato, index_criacao,
+                         index_agenda, update_contato)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index_totem, name="index"),
+    path('',index_agenda, name="index"),
+    path('criar/', index_criacao, name = "index_criacao"),
+    path('contato/<int:id_contato>', index_contato, name="index_contato"),
+    path('update/<int:id_contato>', update_contato, name="update_contato"),
+    path('delete/<int:id_contato>', delete_contato, name="delete_contato"),
 ]
