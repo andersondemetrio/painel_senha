@@ -1,0 +1,395 @@
+/* Rectangle 2 */
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1280px;
+height: 76px;
+
+background: rgba(86, 168, 193, 0.74);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Totem Senhas */
+
+
+position: absolute;
+width: 311px;
+height: 58px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 44px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #4A5153;
+
+
+
+/* Inserir senha */
+
+
+position: absolute;
+width: 144px;
+height: 44px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 251, 251, 0.8);
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Desconectar */
+
+
+position: absolute;
+width: 144px;
+height: 44px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 251, 251, 0.8);
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Rectangle 5 */
+
+
+position: absolute;
+width: 163px;
+height: 495px;
+
+background: #D9D9D9;
+
+
+/* Rectangle 6 */
+
+
+position: absolute;
+width: 270px;
+height: 495px;
+
+background: #D9D9D9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Rectangle 7 */
+
+
+position: absolute;
+width: 223px;
+height: 495px;
+
+background: #D9D9D9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Rectangle 14 */
+
+
+position: absolute;
+width: 229px;
+height: 495px;
+
+background: #D9D9D9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Rectangle 15 */
+
+
+position: absolute;
+width: 127px;
+height: 495px;
+
+background: #D9D9D9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Rectangle 16 */
+
+
+position: absolute;
+width: 127px;
+height: 495px;
+
+background: #D9D9D9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Número da senha */
+
+
+position: absolute;
+width: 127px;
+height: 60px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Nome do paciente */
+
+
+position: absolute;
+width: 214px;
+height: 37px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Setor */
+
+
+position: absolute;
+width: 153px;
+height: 27px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Data e hora da chamada */
+
+
+position: absolute;
+width: 212px;
+height: 39px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Chamar senha */
+
+
+position: absolute;
+width: 120px;
+height: 39px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Deletar senha */
+
+
+position: absolute;
+width: 120px;
+height: 39px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Rectangle 8 */
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1142px;
+height: 144px;
+
+background: #E5E5E5;
+border: 1px solid rgba(0, 0, 0, 0.35);
+
+
+/* Rectangle 17 */
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1142px;
+height: 144px;
+
+background: #E5E5E5;
+border: 1px solid rgba(0, 0, 0, 0.35);
+
+
+/* Rectangle 18 */
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1142px;
+height: 144px;
+
+background: #E5E5E5;
+border: 1px solid rgba(0, 0, 0, 0.35);
+
+
+/* Line 1 */
+
+
+position: absolute;
+width: 502px;
+height: 0px;
+
+border: 1px solid rgba(0, 0, 0, 0.35);
+transform: rotate(90deg);
+
+
+/* Line 2 */
+
+
+position: absolute;
+width: 495px;
+height: 0px;
+
+border: 1px solid rgba(0, 0, 0, 0.35);
+transform: rotate(90deg);
+
+
+/* Line 3 */
+
+
+position: absolute;
+width: 495.01px;
+height: 0px;
+
+border: 1px solid rgba(0, 0, 0, 0.35);
+transform: rotate(90.35deg);
+
+
+/* Line 4 */
+
+
+position: absolute;
+width: 495.01px;
+height: 0px;
+
+border: 1px solid rgba(0, 0, 0, 0.35);
+transform: rotate(90.35deg);
+
+
+/* Line 5 */
+
+
+position: absolute;
+width: 495.01px;
+height: 0px;
+
+border: 1px solid rgba(0, 0, 0, 0.35);
+transform: rotate(90.35deg);
+
+
+/* Rectangle 11 */
+
+
+position: absolute;
+width: 163px;
+height: 57px;
+
+background: #D9D9D9;
+
+
+/* Rectangle 12 */
+
+
+position: absolute;
+width: 233px;
+height: 57px;
+
+background: #D9D9D9;
+
+
+/* Inserir nova senha */
+
+
+position: absolute;
+width: 193px;
+height: 27px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;

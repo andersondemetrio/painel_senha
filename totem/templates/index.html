@@ -5,9 +5,11 @@
     <tr>
       <th scope="col">id</th>
       <th scope="col">Nome</th>
-      <th scope="col">Email</th>
+      <th scope="col">Sala</th>
       <th scope="col">Senha</th>
       <th scope="col">Data de criação</th>
+      <th scope="col">Ações</th>
+      <th scope="col">Deletar</th>
       
     </tr>
   </thead>
@@ -19,6 +21,11 @@
       <td><a href="{%url 'index_contato' c.id %}"> {{c.senha}}</a></td> 
       <td><a href="{%url 'index_contato' c.id %}"> {{c.sala}}</a></td> 
       <td><a href="{%url 'index_contato' c.id %}"> {{c.horario|date:'d/m/Y'}}</a></td> 
+      <td><a href="{%url 'update_contato' c.id %}"> editar</a></td> 
+      <td>  
+               <a href= "{%url 'delete_contato' c.id %}"> deletar</a>
+          
+      </td> 
     </tr>  
     {% endfor %}}
   </tbody>

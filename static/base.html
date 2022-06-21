@@ -5,14 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto Totem</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
+<style>
+    #container {
+        background-color: white;
+        width: 311px;
+        height: 58px;
+        text-align: left;
+    }
+
+    #Senha {
+        background-color: white;
+        width: 144px;
+        height: 44px;
+        text-align: right;
+
+    }
+
+    h1 {
+        position: absolute;
+        width: 311px;
+        height: 58px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 44px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #4A5153;
+    }
+
+    h2 {
+        position: absolute;
+        width: 144px;
+        height: 44px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        display: block;
+        align-items: left;
+        text-align: left;
+
+        color: #4A5153;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Desconectar */
+</style>
 
 <body>
+    <div id="container">
+        <h1> Totem Senhas</h1>
+    </div>
+    <div id="Senha">
+        <h2> Inserir Senha</h2>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
         <a class="navbar-brand" href="{% url 'index' %}">Inicio</a>
         <a href="javascript:void(0)" onClick="history.go(-1); return false;">Voltar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -35,8 +97,9 @@
     {% endblock conteudo2 %}
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+
+        </script>
 </body>
 
 </html>

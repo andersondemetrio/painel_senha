@@ -2,10 +2,12 @@
 
  {% block conteudo %}
 
- <div style="padding:30px">
- <h1> {{contatos.id}} </h1>
- <h2> {{contatos.senha}}</h2>
- <input name="nome" value={{contatos.paciente}}> 
+ <div style="padding:40px">
+ <h1> {{contato.id}} </h1>
+ <h1> {{contato.paciente}} </h1>
+ <h1> {{contato.senha}}</h1>
+ <h1> {{contato.sala}} </h1>
+ <h1> {{contato.horario}}</h1>
  </div>
 {% endblock conteudo %}
 

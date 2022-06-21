@@ -3,7 +3,7 @@
     "type": "python",
     "request": "launch",
     "stopOnEntry": false,
-    "pythonPath": "${config.python.pythonPath}",
+    "python": "${config.python.pythonPath}",
     "program": "${workspaceRoot}/manage.py",
     "args": [
         "runserver",

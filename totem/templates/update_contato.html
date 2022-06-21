@@ -6,27 +6,21 @@
     {% csrf_token %}
 <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+      <span class="input-group-text" id="inputGroup-sizing-default">paciente</span>
     </div>
-    <input type="text" class="form-control" name="nome" value="{{contato.nome}}">
+    <input type="text" class="form-control" name="paciente" value="{{contato.paciente}}">
   </div>
 <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+      <span class="input-group-text" id="inputGroup-sizing-default">senha</span>
     </div>
-    <input type="text" class="form-control" name="email" value="{{contato.email}}"><br>
+    <input type="text" class="form-control" name="senha" value="{{contato.senha}}"><br>
 </div>
 <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-default">Telefone</span>
+      <span class="input-group-text" id="inputGroup-sizing-default">sala</span>
     </div>
-    <input type="text" class="form-control" name="telefone" value="{{contato.telefone}}"><br>
-</div>
-<div class="input-group mb-3">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-default">Data criação</span>
-    </div>
-    <input type="text" class="form-control" name="data_criacao" value="{{contato.data_criacao|date:'d/m/Y'}}"><br>
+    <input type="text" class="form-control" name="sala" value="{{contato.sala}}"><br>
 </div>
 <button type="submit" class="btn btn-primary">Salvar</button>
 </form>

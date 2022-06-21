@@ -39,13 +39,14 @@ def index_contato(request, id_contato):
 def update_contato(request, id_contato):
     contato = Totem.objects.filter(id=id_contato).first()
     if request.method == "POST":  
-        contato.nome =request.POST["nome"]
-        contato.email =request.POST["email"]
-        contato.telefone =request.POST["telefone"]
+        contato.paciente =request.POST["paciente"]
+        contato.senha =request.POST["senha"]
+        contato.sala =request.POST["sala"]
+    #    contato.horario =request.POST.get["horario"]
         contato.save()
         contato = Totem.objects.all()
         dados = {
-        "contatos":contato
+        "contato":contato
     }
         return render(request, "index.html", context=dados)
 
@@ -54,7 +55,7 @@ def update_contato(request, id_contato):
     }
     return render(request, "update_contato.html", context=dados)
 
-def delete_contato(request,id_contato):
+def delete_contato(request,id_contato):   
     Totem.objects.filter(id=id_contato).delete()
     contatos = Totem.objects.all()
     dados = {
