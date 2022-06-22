@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    {{% for c in contatos %}
+    {% for c in contato %}
     <tr>
       <th scope="row">{{c.id}}</th>
       <td><a href="{%url 'index_contato' c.id %}"> {{c.paciente}}</a></td> 
@@ -27,7 +27,7 @@
           
       </td> 
     </tr>  
-    {% endfor %}}
+    {% endfor %}
   </tbody>
 </table>
 {% endblock conteudo  %}
