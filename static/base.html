@@ -17,30 +17,28 @@
 
 
 <body>
-    <div id="container">
-        <h1> Totem Senhas</h1>
-    </div>
-    <div id="Senha">
-        <h2> Inserir Senha</h2>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-        <a class="navbar-brand" href="{% url 'index' %}">Inicio</a>
-        <a href="javascript:void(0)" onClick="history.go(-1); return false;">Voltar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #9bb7ccc2;">
+        <a class="navbar-brand" style="font-size: 25px;" href="{% url 'index' %}">Totem Senhas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'index_criacao' %}">Criar <span class="sr-only"></span></a>
-                </li>
-
-            </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'index_criacao' %}">Criar <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Desconectar</a>              
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="javascript:void(0)" onClick="history.go(-1); return false;">Voltar</a>
+            </li>            
+          </ul>
         </div>
-    </nav>
+      </nav>
+
+
     {% block conteudo %}
     {% endblock conteudo %}
     {% block conteudo2 %}
