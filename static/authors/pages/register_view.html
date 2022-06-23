@@ -1,0 +1,33 @@
+{% include 'loguin.html' %}
+{% block conteudo %}
+
+<div class="main-content  container">
+    <h2> Cadastro de Usuário</h2>
+    <form action="{% url 'authors:create' %}" method="POST">
+        {%csrf_token %}
+        <div class="form-content form-content-grid">
+            {%for field in form %}
+            <div class="form-group">
+                <label for="{{field.id_for_label}}"> {{field.label}}
+                    {{field}}
+                </label>
+                {%if field.help_text %}
+                <p class="help-texte">{{field.help_text}} </p>
+                {% endif%}
+
+                {{field.erros}}
+
+            </div>
+            {% endfor%}
+        </div>
+        <div class="form-content button">
+            <div class="form-content button">
+                <button type="submit">Enviar
+
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock conteudo %}
