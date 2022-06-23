@@ -1,9 +1,9 @@
 {% include 'base.html' %}
 {% block conteudo  %}
-<table class="table">
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col">id</th>
+      <th scope="col">Id</th>
       <th scope="col">Nome</th>
       <th scope="col">Sala</th>
       <th scope="col">Senha</th>
@@ -14,20 +14,19 @@
     </tr>
   </thead>
   <tbody>
-    {{% for c in contatos %}
+    {% for c in contatos %}
     <tr>
       <th scope="row">{{c.id}}</th>
       <td><a href="{%url 'index_contato' c.id %}"> {{c.paciente}}</a></td> 
       <td><a href="{%url 'index_contato' c.id %}"> {{c.senha}}</a></td> 
       <td><a href="{%url 'index_contato' c.id %}"> {{c.sala}}</a></td> 
-      <td><a href="{%url 'index_contato' c.id %}"> {{c.horario|date:'d/m/Y'}}</a></td> 
+      <td><a href="{%url 'index_contato' c.id %}"> {{c.data|date:'d/m/Y'}}</a></td> 
       <td><a href="{%url 'update_contato' c.id %}"> editar</a></td> 
-      <td>  
-               <a href= "{%url 'delete_contato' c.id %}"> deletar</a>
+      <td> <a href= "{%url 'delete_contato' c.id %}"> deletar</a>
           
       </td> 
     </tr>  
-    {% endfor %}}
+    {% endfor %}
   </tbody>
 </table>
 {% endblock conteudo  %}

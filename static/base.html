@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Totem</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -563,30 +566,28 @@
 </style>
 
 <body>
-    <div id="container">
-        <h1> Totem Senhas</h1>
-    </div>
-    <div id="Senha">
-        <h2> Inserir Senha</h2>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-        <a class="navbar-brand" href="{% url 'index' %}">Inicio</a>
-        <a href="javascript:void(0)" onClick="history.go(-1); return false;">Voltar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: rgba(86, 168, 193, 0.348); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); margin-bottom: 10px;">
+        <a class="navbar-brand" style="font-size: 35px;" href="{% url 'index' %}">Totem Senhas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'index_criacao' %}">Criar <span class="sr-only"></span></a>
-                </li>
-
-            </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'index_criacao' %}">Criar <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Desconectar</a>              
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="javascript:void(0)" onClick="history.go(-1); return false;">Voltar</a>
+            </li>            
+          </ul>
         </div>
-    </nav>
+      </nav>
+
+
     {% block conteudo %}
     {% endblock conteudo %}
     {% block conteudo2 %}

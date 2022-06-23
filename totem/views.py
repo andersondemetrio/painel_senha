@@ -42,7 +42,7 @@ def update_contato(request, id_contato):
         contato.paciente =request.POST["paciente"]
         contato.senha =request.POST["senha"]
         contato.sala =request.POST["sala"]
-    #    contato.horario =request.POST.get["horario"]
+        contato.data =request.POST.get["data"]
         contato.save()
         contato = Totem.objects.all()
         dados = {

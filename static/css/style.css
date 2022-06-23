@@ -1,0 +1,63 @@
+*{
+    font-family: 'Inter';
+    font-size: 18px;
+}  
+
+
+tr{
+    text-align: center;
+}
+    
+    
+    
+    #container {
+        background-color: white;
+        width: 311px;
+        height: 58px;
+        text-align: left;
+        color: #60b2c8;
+    }
+
+    #Senha {
+        background-color: rgb(178, 229, 225);
+        width: 144px;
+        height: 44px;
+        text-align: right;
+
+    }
+
+    h1 {
+        position: absolute;
+        width: 311px;
+        height: 58px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 44px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #60b2c8;
+    }
+
+    h2 {
+        position: absolute;
+        width: 144px;
+        height: 44px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        display: block;
+        align-items: left;
+        text-align: left;
+
+        color: #ff008c;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }

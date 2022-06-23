@@ -3,7 +3,7 @@
 
 <div class="container">
     <form action= {% url 'index' %} method="post" >
-        <table class = "table">
+        <table class = "table" id="tabela">
             {{forms}}
             {% csrf_token %} 
             <tr>
